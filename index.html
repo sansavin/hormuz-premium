@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Hormuz Premium</title>
+
+  <!-- only library needed -->
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+
+  <style>
+    body { font-family: system-ui, Arial, sans-serif; color: #1b2125;
+           max-width: 900px; margin: 24px auto; padding: 0 16px; }
+    h1 { margin: 0 0 4px; }
+    #desc { color: #555; min-height: 42px; margin: 6px 0 10px; }
+    svg { width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; }
+    .line { fill: none; stroke: #1b2125; stroke-width: 2; }
+    .pt { fill: #c1452e; cursor: pointer; }
+    .axis text { fill: #666; font-size: 12px; }
+    .axis path, .axis line { stroke: #ccc; }
+    .anno-line { stroke: #1b2125; stroke-width: 1; }
+    .anno-pt { fill: #1b2125; }
+    .anno-title { font-weight: 700; font-size: 13px; fill: #1b2125; }
+    .anno-label { font-size: 12px; fill: #555; }
+    .controls { margin-top: 12px; }
+    button { font-size: 14px; padding: 8px 14px; margin-right: 8px; cursor: pointer; }
+    button:disabled { opacity: .4; cursor: default; }
+    #tip { position: fixed; background: #1b2125; color: #fff; padding: 7px 10px;
+           border-radius: 6px; font-size: 12px; pointer-events: none; opacity: 0; max-width: 240px; }
+    .hint { color: #888; font-size: 12px; }
+  </style>
+</head>
+<body>
+  <h1>The Hormuz Premium</h1>
+  <p class="hint">Brent crude vs. the 2026 Iran-US war. Use Back / Next; hover a red event dot for details.</p>
+
+  <h2 id="title">...</h2>
+  <p id="desc">...</p>
+
+  <div id="chart"></div>
+
+  <div class="controls">
+    <button id="prev">&larr; Back</button>
+    <button id="next">Next &rarr;</button>
+  </div>
+
+  <div id="tip"></div>
+  <script src="script.js"></script>
+</body>
+</html>
