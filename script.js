@@ -1,4 +1,8 @@
 
+   PARAMETERS  : state.scene
+   SCENES      : SCENES[] + draw()
+   ANNOTATIONS : annotationsFor() + drawAnnotations() (one shared template)
+   TRIGGERS    : Back / Next buttons; hover tooltip (free-form)   
 
 /* ---- embedded data (real FRED Brent, 2026) ---- */
 const PRICE = [["2026-01-02",61.98],["2026-01-05",63.00],["2026-01-06",62.10],["2026-01-07",61.08],
