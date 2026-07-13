@@ -1,10 +1,4 @@
-/* The Hormuz Premium — minimal narrative visualization (interactive slideshow).
-   Uses ONLY d3. Data is embedded, so it works with no server and no fetch.
 
-   PARAMETERS  : state.scene
-   SCENES      : SCENES[] + draw()
-   ANNOTATIONS : annotationsFor() + drawAnnotations() (one shared template)
-   TRIGGERS    : Back / Next buttons; hover tooltip (free-form)            */
 
 /* ---- embedded data (real FRED Brent, 2026) ---- */
 const PRICE = [["2026-01-02",61.98],["2026-01-05",63.00],["2026-01-06",62.10],["2026-01-07",61.08],
